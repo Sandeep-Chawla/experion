@@ -6,9 +6,7 @@ $(document).ready(function () {
       $("#nav").removeClass("bg-[#141b23]");
     }
     $("#img-click2").removeClass('enlargeImage')
-    $("#img-click2 div").addClass('flex')
     $("#img-click1").removeClass('enlargeImage')
-    $("#img-click1 div").addClass('flex')
   });
   $("#menu").click(() => {
     $("aside").toggleClass("-translate-x-96");
@@ -36,7 +34,6 @@ $(document).ready(function () {
 });
   $("#img-click2").click(()=>{
     $("#img-click2").toggleClass('enlargeImage')
-    $("#img-click2 div").toggle()
 });
 
 
