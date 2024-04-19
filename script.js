@@ -5,6 +5,10 @@ $(document).ready(function () {
     } else {
       $("#nav").removeClass("bg-[#141b23]");
     }
+    $("#img-click2").removeClass('enlargeImage')
+    $("#img-click2 div").addClass('flex')
+    $("#img-click1").removeClass('enlargeImage')
+    $("#img-click1 div").addClass('flex')
   });
   $("#menu").click(() => {
     $("aside").toggleClass("-translate-x-96");
