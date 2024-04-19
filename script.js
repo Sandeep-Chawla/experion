@@ -26,7 +26,14 @@ $(document).ready(function () {
   $("#closs").click(() => {
     $("#menuside").addClass("-translate-x-96");
   });
-
+  $("#img-click1").click(()=>{
+    $("#img-click1").toggleClass('enlargeImage')
+    $("#img-click1 div").toggle()
+});
+  $("#img-click2").click(()=>{
+    $("#img-click2").toggleClass('enlargeImage')
+    $("#img-click2 div").toggle()
+});
 
 
   $("#myForm1").submit(function (event) {
@@ -68,7 +75,7 @@ $(document).ready(function () {
       $("#mobile-error1").text("");
       $("#name-error1").text("");
       Swal.fire({
-            title: "Thank You! " + $("#name1").val(),
+            title: "Thank You! " + $("#name").val(),
             text: "Your inquiry has been received, and we will respond shortly",
             icon: "success",
           });
@@ -79,7 +86,7 @@ $(document).ready(function () {
         success: function (data) {
           // handle success response
           console.log("Form submitted successfully: " + data);
-          $("#myForm1")[0].reset();
+          $("#myForm")[0].reset();
           if(data =='success'){
           }
           else{
@@ -146,7 +153,7 @@ $(document).ready(function () {
       $("#mobile-error2").text("");
       $("#close").click();
       Swal.fire({
-              title: "Thank You! " + $("#name2").val(),
+              title: "Thank You! " + $("#name").val(),
               text: "Your inquiry has been received, and we will respond shortly",
               icon: "success",
             });
@@ -157,7 +164,7 @@ $(document).ready(function () {
         success: function(data) {
           // handle success response
           console.log("Form submitted successfully: " + data);
-          $("#myForm2")[0].reset();
+          $("#myForm")[0].reset();
           if(data =='success'){
           }
           else{
@@ -222,7 +229,7 @@ $(document).ready(function () {
       $("#mobile-error3").text("");
       $("#close").click();
       Swal.fire({
-              title: "Thank You! " + $("#name3").val(),
+              title: "Thank You! " + $("#name").val(),
               text: "Your inquiry has been received, and we will respond shortly",
               icon: "success",
             });
@@ -233,7 +240,7 @@ $(document).ready(function () {
         success: function(data) {
           // handle success response
           console.log("Form submitted successfully: " + data);
-          $("#myForm3")[0].reset();
+          $("#myForm")[0].reset();
           if(data =='success'){
           }
           else{
